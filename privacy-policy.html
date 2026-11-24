@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for VirtualSol.">
+<title>VirtualSol — Privacy Policy</title>
+<style>
+:root{color-scheme:dark;--bg:#08090c;--panel:#111318;--line:#252a33;--text:#edf0f5;--muted:#a4abb7;--accent:#ff741f}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 360px at 75% -10%,rgba(255,116,31,.10),transparent 65%),var(--bg);color:var(--text);font:15px/1.72 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{width:min(820px,calc(100% - 36px));margin:58px auto 90px}.brand{font-weight:750;letter-spacing:-.04em;font-size:24px}.brand span{color:var(--accent)}.eyebrow{margin-top:48px;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}h1{font-size:clamp(34px,6vw,50px);line-height:1.08;letter-spacing:-.055em;margin:12px 0 18px}h2{font-size:20px;letter-spacing:-.025em;margin:38px 0 10px}p{margin:10px 0;color:#d4d8e0}ul{padding-left:22px;color:#d4d8e0}li{margin:7px 0}.meta{border:1px solid var(--line);background:rgba(17,19,24,.85);border-radius:12px;padding:16px 18px;color:var(--muted);font-size:13px}.meta strong{color:var(--text)}a{color:#ff9a5b;text-decoration:none}a:hover{text-decoration:underline}.footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+</style>
+</head>
+<body><main>
+<div class="brand">VirtualSol<span>.</span></div>
+<div class="eyebrow">Privacy &amp; data practices</div>
+<h1>Privacy Policy</h1>
+<p>This policy explains how the VirtualSol Chrome extension handles information when you use its virtual SOL paper-trading features on axiom.trade.</p>
+<div class="meta"><strong>Effective date:</strong> 24 November 2026<br><strong>Product:</strong> VirtualSol, Chrome extension version 27.0.8<br><strong>Operator / controller:</strong> Bence Horváth, independent developer operating the VirtualSol project<br><strong>Privacy contact:</strong> <a href="mailto:hbence503@gmail.com">hbence503@gmail.com</a></div>
+
+<h2>1. What VirtualSol does</h2>
+<p>VirtualSol adds a virtual SOL paper-trading layer to the Axiom website. It uses information displayed by Axiom and public market data to simulate paper orders, balances, positions and profit/loss. Paper trades do not sign, submit or broadcast blockchain transactions and do not move real SOL.</p>
+
+<h2>2. Information processed and stored locally</h2>
+<p>VirtualSol processes information in your browser to provide its paper-trading features. The following information is stored in your Chrome profile, using extension storage and IndexedDB:</p>
+<ul>
+<li>Virtual wallet names and identifiers, virtual SOL balances, funding and transfer records.</li>
+<li>Paper orders, simulated fills, token and market identifiers associated with paper positions, trade timestamps, cost basis, realized and unrealized PnL, and portfolio history.</li>
+<li>Extension settings, paper-trading mode, selected wallets, display preferences, market-data settings and local backup information.</li>
+<li>Optional share-card customisation, such as a display handle, colours and a background image selected by you.</li>
+</ul>
+<p>This information is kept in your browser profile. VirtualSol does not operate a user-account database or a developer-controlled cloud service that receives your paper balances, wallet names, positions, trade history or PnL. Local records remain on your device until you delete/reset them or remove the extension. Any backup you export is saved wherever you choose to store it.</p>
+
+<h2>3. Information read from Axiom</h2>
+<p>While you use VirtualSol on <strong>axiom.trade</strong>, the extension reads relevant information from the active Axiom page locally in your browser. This can include token identity, displayed prices, market capitalisation, pool or bonding-curve identifiers, Axiom's in-page market-data messages and the displayed wallet-chip balance used for a real-funds warning.</p>
+<p>This page information is used to operate the paper-trading interface, calculate simulated fills and value paper positions. VirtualSol does not send Axiom page content, your Axiom credentials, cookies, wallet balances, wallet addresses or paper-trading records to the VirtualSol operator.</p>
+
+<h2>4. Information sent to market-data providers</h2>
+<p>To obtain public market state and fallback price information, VirtualSol can send limited public blockchain identifiers to the market-data service configured in the extension:</p>
+<ul>
+<li><strong>Solana RPC:</strong> by default, requests go to <a href="https://api.mainnet-beta.solana.com/">https://api.mainnet-beta.solana.com</a>. The extension can send public token mint addresses and public market account addresses (for example, bonding-curve, pool or pool-vault accounts) to read publicly available on-chain state and the public SOL/USD price feed. You can disable the chain feed or configure a different HTTPS RPC endpoint in the extension settings.</li>
+<li><strong>DexScreener:</strong> the optional fallback can request public token/market pricing from <a href="https://api.dexscreener.com/">https://api.dexscreener.com/</a>. This fallback is enabled by default in the current build and can be disabled in the extension's market-data settings.</li>
+<li><strong>Custom market-data API:</strong> the current build has an optional custom API endpoint setting, blank by default. If you configure it, the extension may send the public token and market identifiers needed to retrieve quotes to that endpoint.</li>
+</ul>
+<p>As with any internet request, the receiving provider can see your IP address and ordinary technical request metadata. These providers may process or retain request data under their own terms and privacy policies. VirtualSol does not control their independent data practices. If you enter a custom RPC or API endpoint, you are choosing the provider that receives those requests and should review that provider's privacy terms before using it.</p>
+<p>The market-data requests described above are not designed to include your virtual wallet names, virtual balances, paper orders, positions, PnL, Axiom credentials, seed phrases or private keys.</p>
+
+<h2>5. Sharing, analytics and advertising</h2>
+<p>VirtualSol does not sell personal information and does not use paper-trading data for advertising, profiling or credit decisions. The current build does not include analytics, advertising trackers or a developer-operated telemetry service. Share-card images are generated locally when you choose to download or copy them; they are not uploaded by VirtualSol.</p>
+
+<h2>6. Legal basis and purposes</h2>
+<p>Where the GDPR applies, the core processing needed to provide the paper-trading features you choose to activate is based on Article 6(1)(b) GDPR (performance of the service you request or steps taken at your request before using it). Limited processing needed to protect paper-mode integrity and prevent accidental real-fund actions is, where applicable, based on Article 6(1)(f) GDPR (the operator's legitimate interest in operating the feature safely). Public market-data requests are made to provide the prices and market-state information needed by paper trading. Independent market-data providers determine their own purposes and legal bases for any information they process under their own services.</p>
+
+<h2>7. Chrome Web Store Limited Use commitment</h2>
+<p>VirtualSol uses information handled by the extension only to provide, maintain and protect its disclosed paper-trading functionality. Only the public token and market identifiers needed for market-data requests are sent to the configured market-data providers. VirtualSol does not sell user data, use it for personalised advertising, transfer it for unrelated purposes, or use it to determine creditworthiness or for lending. The operator does not access local paper ledgers because those records are not transmitted to the operator. VirtualSol's use of information complies with the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+
+<h2>8. Retention and deletion</h2>
+<p>Paper accounts, settings and related records remain in your browser profile until you delete or reset them, or uninstall the extension. Exported backups remain under your control and must be deleted separately from the location where you saved them. VirtualSol does not retain a server-side copy of your local paper ledger. Market-data providers may retain request logs in accordance with their own policies.</p>
+
+<h2>9. Security</h2>
+<p>Requests to the default public market-data endpoints use HTTPS. Local paper-trading data is stored in the browser profile on your device. Keep your device and Chrome profile secure, and do not share exported backups if they contain information you prefer to keep private. No method of local storage or internet transmission can be guaranteed to be completely secure.</p>
+
+<h2>10. Your choices and rights</h2>
+<p>You can turn paper trading on or off, change or disable market-data sources, manage paper wallets, export or delete local data, and uninstall the extension. Because VirtualSol does not receive or hold your paper ledger on a developer server, the operator cannot retrieve or directly delete records stored only in your browser. For questions or requests concerning information processed by the operator, contact <a href="mailto:hbence503@gmail.com">hbence503@gmail.com</a>.</p>
+<p>Where the GDPR applies, you may have rights to request access, rectification, erasure, restriction or portability, and to object to certain processing. You may also lodge a complaint with your competent data-protection supervisory authority.</p>
+
+<h2>11. Children</h2>
+<p>VirtualSol is not designed for children. The extension does not provide user registration or a developer-operated account system, and the operator does not knowingly collect children's personal information through such a system.</p>
+
+<h2>12. Changes to this policy</h2>
+<p>This policy may be updated if VirtualSol's features, data flows or applicable requirements change. The current version and effective date will be published at the same policy URL. Material changes to data handling will be disclosed in the extension where required.</p>
+
+<h2>13. Contact</h2>
+<p>For privacy questions, please contact:</p>
+<p><strong>Bence Horváth</strong><br>VirtualSol<br><a href="mailto:hbence503@gmail.com">hbence503@gmail.com</a></p>
+<div class="footer">VirtualSol is an independent, unofficial product and is not affiliated with or endorsed by Axiom. This policy describes the VirtualSol extension's current data practices; it does not replace any separate privacy policy provided by Axiom or by third-party market-data services.</div>
+</main></body></html>
